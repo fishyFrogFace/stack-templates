@@ -74,7 +74,7 @@ module Utf8
 import System.IO (hSetEncoding, hPutStr, IOMode(..), withFile, hGetContents, utf8)
 import Control.DeepSeq (($!!))
 
-writeFileUtf8 thMode :: FilePath -> String -> IOMode -> IO ()
+writeWithMode :: FilePath -> String -> IOMode -> IO ()
 writeWithMode fp content mode =
     withFile fp mode $ \h -> do
       hSetEncoding h utf8
