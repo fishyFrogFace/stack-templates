@@ -134,6 +134,21 @@ main = do
 {-# START_FILE README.md #-}
 # {{name}}
 
+You need [Stack](https://www.haskell.org/platform/) to build the project.
+
+## Usage
+
+```
+stack build
+```
+```
+stack exec {{name}}-exe
+```
+or
+```
+stack ghci
+```
+
 {-# START_FILE ChangeLog.md #-}
 # Changelog for {{name}}
 
