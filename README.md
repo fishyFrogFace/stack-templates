@@ -5,9 +5,8 @@ Some stack templates for personal use (my name is in the templates, so change th
 You need [Stack](https://www.haskell.org/platform/) to use these templates
 
 ## Usage
-Navigate to the folder the cloned project is in and then run:
 ```
-stack new <project-name> <template-name>
+stack new <project-name> fishyfrogface/unicode-template.hsfiles
 ```
 ```
 cd <project-name>
