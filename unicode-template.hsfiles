@@ -69,6 +69,8 @@ someFunc = putStrLn "someFunc"
 module Utf8
   ( writeFileUtf8
   , readFileUtf8
+  , readLinesUtf8
+  , appendFileUtf8
   ) where
 
 import System.IO (hSetEncoding, hPutStr, IOMode(..), withFile, hGetContents, utf8)
@@ -92,6 +94,11 @@ readFileUtf8 fp =
     hSetEncoding h utf8
     f <- hGetContents h
     return $!! f
+
+readLinesUtf8 :: FilePath -> IO [String]
+readLinesUtf8 fp = do
+  rawFile <- readFileUtf8 fp
+  return $ lines rawFile
 
 {-# START_FILE src/Utils.hs #-}
 module Utils
