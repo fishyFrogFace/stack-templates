@@ -167,6 +167,9 @@ or
 stack ghci
 ```
 
+{-# START_FILE .ghci #-}
+:set prompt "\ESC[1;34m%s \ESC[0;0m\nlambda> "
+
 {-# START_FILE LICENSE #-}
 Copyright {{author-name}}{{^author-name}}Camilla Rygh{{/author-name}} (c) {{year}}{{^year}}2021{{/year}}
 
