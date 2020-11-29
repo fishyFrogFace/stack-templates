@@ -167,13 +167,8 @@ or
 stack ghci
 ```
 
-{-# START_FILE ChangeLog.md #-}
-# Changelog for {{name}}
-
-## Unreleased changes
-
 {-# START_FILE LICENSE #-}
-Copyright {{author-name}}{{^author-name}}Camilla Rygh{{/author-name}} (c) {{year}}{{^year}}2019{{/year}}
+Copyright {{author-name}}{{^author-name}}Camilla Rygh{{/author-name}} (c) {{year}}{{^year}}2021{{/year}}
 
 All rights reserved.
 
